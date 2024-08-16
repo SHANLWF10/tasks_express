@@ -11,9 +11,9 @@
 <body>
     <div class="main">
         <div class="form">
-            <form action="">
-                <input type="text" name="input" id="input" placeholder="Write title here...">
-                <textarea name="text" id="text" placeholder="Write tasks here..."></textarea>
+            <form action="/create" method="post">
+                <input type="text" name="title" id="input" placeholder="Write title here..." required>
+                <textarea name="details" id="text" placeholder="Write tasks here..."></textarea required>
                 <input type="submit" value="Create Task" id="btn">
             </form>
         </div>
@@ -21,8 +21,10 @@
             <% if(files.length>0) { %>
                 <% files.forEach((file)=>{ %>
                     <div class="task">
-                        <h3 class="title">Task Goes Here...</h3>
-                        <a href="" class="text">Read More..</a>
+                        <h3 class="title">
+                            <%= file %>
+                        </h3>
+                        <a href="/files/<%= file %>" class="text">Read More..</a>
                     </div>
                     <% }) %>
                         <% } else { %>

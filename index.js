@@ -17,6 +17,28 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/files/:filename", (req, res) => {
+  fs.readFile(`./files/${req.params.filename}`, "utf-8", (err, data) => {
+    res.render("show", {
+      filename: req.params.filename,
+      filedata: data,
+    });
+  });
+});
+
+app.post("/create", (req, res) => {
+  fs.writeFile(
+    `./files/${
+      req.body.title !== "" ? req.body.title.split(" ").join("") : "no Name"
+    }.txt`,
+    req.body.details,
+    (err) => {
+      res.redirect("/");
+      if (err) console.log(err);
+    }
+  );
+});
+
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}`);
 });

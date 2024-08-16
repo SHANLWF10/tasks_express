@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     overflow: hidden;
+    color: white;
 }
 
 html,
@@ -37,6 +38,11 @@ body {
 
 .form form #input {
     height: 48px;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
 }
 
 .form form #btn {
@@ -75,4 +81,9 @@ body {
 .noTaskText {
     color: aliceblue;
     margin-top: 1rem;
+}
+
+.show>* {
+    margin: 1rem;
+    display: block;
 }
