@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="form">
+            <form action="">
+                <input type="text" name="input" id="input" placeholder="Write title here...">
+                <textarea name="text" id="text" placeholder="Write tasks here..."></textarea>
+                <input type="submit" value="Create Task" id="btn">
+            </form>
+        </div>
+        <div class="tasks">
+            <% if(files.length>0) { %>
+                <% files.forEach((file)=>{ %>
+                    <div class="task">
+                        <h3 class="title">Task Goes Here...</h3>
+                        <a href="" class="text">Read More..</a>
+                    </div>
+                    <% }) %>
+                        <% } else { %>
+                            <h3 class="noTaskText">No tasks Yet...</h3>
+                            <% }%>
+        </div>
+    </div>
+    <script src="/javascript/script.js"></script>
+</body>
+
+</html>

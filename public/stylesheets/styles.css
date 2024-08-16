@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(5, 5, 5);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.form form>* {
+    display: block;
+    width: 100%;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    background-color: rgb(49, 47, 47);
+    color: white;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.form form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.form form #input {
+    height: 48px;
+}
+
+.form form #btn {
+    width: 20%;
+    padding: 10px 0;
+    background-color: blueviolet;
+    font-size: 1.05rem;
+}
+
+.tasks {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.task {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(49, 47, 47);
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    color: white;
+    padding: 5px;
+    /* display: none; */
+}
+
+.task a {
+    text-decoration: none;
+    margin-top: 0.8rem;
+    display: inline-block;
+    color: blueviolet;
+}
+
+.noTaskText {
+    color: aliceblue;
+    margin-top: 1rem;
+}
