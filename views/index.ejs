@@ -24,8 +24,10 @@
                         <h3 class="title">
                             <%= file %>
                         </h3>
-                        <a href="/files/<%= file %>" class="text">Read More..</a>
-                        <a href="/edit/<%= file %>" id="edit">Edit</a>
+                        <div class="a_tags">
+                                                    <a href="/files/<%= file %>" class="text">Read More..</a>
+                                                    <a href="/edit/<%= file %>" id="edit">Edit Filename</a>
+                        </div>
                     </div>
                     <% }) %>
                         <% } else { %>

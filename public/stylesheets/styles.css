@@ -19,7 +19,7 @@ body {
     height: 100vh;
 }
 
-.form form>* {
+form>* {
     display: block;
     width: 100%;
     border-radius: 0.25rem;
@@ -31,12 +31,12 @@ body {
     border: none;
 }
 
-.form form textarea {
+form textarea {
     resize: none;
     height: 150px;
 }
 
-.form form #input {
+form #input {
     height: 48px;
 }
 
@@ -45,7 +45,7 @@ a {
     text-decoration: none;
 }
 
-.form form #btn {
+form #btn {
     width: 20%;
     padding: 10px 0;
     background-color: blueviolet;
@@ -88,6 +88,13 @@ a {
     display: block;
 }
 
+.a_tags {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 #edit {
     color: white;
+    font-size: small;
 }

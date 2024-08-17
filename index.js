@@ -26,6 +26,10 @@ app.get("/files/:filename", (req, res) => {
   });
 });
 
+app.get("/edit/:filename", (req, res) => {
+  res.render("edit", { filename: req.params.filename });
+});
+
 app.post("/create", (req, res) => {
   fs.writeFile(
     `./files/${

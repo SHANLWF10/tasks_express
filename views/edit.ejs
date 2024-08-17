@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+    <div class="main show">
+        <a href="/">Back to homepage...</a>
+        <form action="/create" method="post">
+            <input type="text" name="previous" id="input" placeholder="Previous Name" value="<%= filename %>" required>
+            <input type="text" name="new_name" id="input" placeholder="New Name" required>
+            <input type="submit" value="Update Name" id="btn" style="background-color: yellowgreen; width: auto; padding: 10px 5px;">
+        </form>
+    </div>
+</body>
+
+</html>
